@@ -1,0 +1,3 @@
+[submodule "app"]
+	path = app
+	url = cs-app/src/main/java/com/cs/app/
