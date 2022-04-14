@@ -1,3 +1,4 @@
 [submodule "cs-app/src/main/java/com/cs/app"]
 	path = cs-app/src/main/java/com/cs/app
 	url = git@github.com:picobyte/csbreedmod.git
+	branch = json_test
