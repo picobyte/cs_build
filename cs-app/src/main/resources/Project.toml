@@ -1,0 +1,68 @@
+
+[IntroOne]
+  Header = """
+Corrupted Saviors, Release 28: "Encounter"
+
+This game contains content of an adult nature and should not be played by the underaged or by those unable to \
+distinguish fantasy from reality.
+
+[separator]
+
+Japan, mid-21st century.  The psychic  energies of humanity have finally begun to coalesce into physical form.  The \
+resulting beings are known as Demons.  Born from the base desires suppressed deep within the human mind, these \
+creatures spread across the planet, leaving chaos and depravity in their wake.
+
+But Demons do not represent the entirety of the human condition.  The hopes and determination of humanity have also \
+risen up, gathering in the bodies of a few Chosen warriors in order to grant them the power to fight the Demons.  \
+Although each of them was once an ordinary person, their new abilities place them at the center of the struggle for \
+the soul of humanity.
+
+You are a Demon Lord, the highest form of Demon, with your own mind and will, focused on the corruption of all that is \
+good in the world.  The Chosen are the keystone of humanity's resistance to your goal, but to simply kill them would \
+be meaningless.  Instead, shatter their notions of right and wrong, showing them the true darkness that hides within!\
+"""
+  Tutorial = """\n\n
+(Welcome to the tutorial!  This feature is intended to demonstrate some useful techniques for corrupting the Chosen.  It \
+uses a mid-game save file with several upgrades already purchased.  When playing from the start, it makes more sense to \
+use the first several days experimenting to find the strengths and weaknesses of the Chosen and accumulating Evil Energy \
+before aiming to break a vulnerability.  Read the guide.txt file included with the game for a more basic overview of the \
+mechanics.
+
+For now, let's start by using Examine to figure out how best to deal with Miracle.)\
+"""
+  Copyright = """
+\n\n[separator]\n
+Copyright 2019-2022 by CSdev. Corrupted Saviors is licensed under the Creative Commons Attribution-ShareAlike 4.0 \
+International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.
+
+Default portrait set created by CSdev with the assistance of Artbreeder and dedicated to the public domain (CC0).  For \
+more information, see https://creativecommons.org/publicdomain/zero/1.0/.
+
+If you like this game, please share it and discuss it so that it can be further enjoyed and improved!  There is a good \
+chance that the developer reads whatever forum you found it on.  Direct feedback can also be sent to \
+corruptedsaviors@gmail.com
+
+New versions are first posted to corruptedsaviors.blogspot.com
+The developer's tip jar can be found at subscribestar.adult/csdev\
+"""
+
+[CampaignMenu]
+  CustomChosen = """\n\n
+Before you start, you can generate custom Chosen who will eventually appear to face you.  You can also import a full \
+team of Chosen from a save, in which case they'll face you in their Day 1 (i.e. uncorrupted) state.\
+"""
+  EasyMode = """\n\n
+Easy Mode is turned on.  It will be possible to use cheats.  Aside from the presence of Elite Chosen, there will be no \
+increases in the difficulty of later loops.\
+"""
+
+[ImportMenu]
+  NoRosters = """
+\n\n[separator]\n
+No importable rosters found in directory.\
+"""
+  GotRosters = """\n\n
+\n\n[separator]\n
+Found the following importable rosters in directory.  Which would you like to import?\
+"""
+
