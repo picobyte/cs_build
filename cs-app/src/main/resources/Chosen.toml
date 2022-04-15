@@ -6,6 +6,8 @@
 [DoubleBroadcast]
   # branch condition wherein these occur. Condition converted to index in ChosenDuoParams, since a DoubleBroadcast
   # applies to two Chosen.
+
+  # in toml you have to dot-prepend prior table names.
   [DoubleBroadcast.MoreConfident.Undefiled]
     DignityModest = [
       # Order is for Dignity from lowest to highest, first not modest..

@@ -68,4 +68,47 @@ public class AppTest
         assertTrue(String.format("'%s'\n!=\n'%s'", test, test2), test.equals(test2));
     }
 
+    @Test
+    public void DefaultOverriding()
+    {
+        // proof of concept toml default value overriding
+
+        InputStream def = AppTest.class.getResourceAsStream("/default.toml");
+        InputStream im = AppTest.class.getResourceAsStream("/innocentMale.toml");
+        InputStream lim = AppTest.class.getResourceAsStream("/lessInnocentMale.toml");
+        InputStream lif = AppTest.class.getResourceAsStream("/lessInnocentFemale.toml");
+        InputStream ti = AppTest.class.getResourceAsStream("/tickle.toml");
+
+        assertTrue("default.toml not found?", def != null);
+        assertTrue("innocentMale.toml not found?", im != null);
+        assertTrue("lessInnocentMale not found?", lim != null);
+        assertTrue("lessInnocentFemale not found?", lif != null);
+        assertTrue("tickle.toml not found?", ti != null);
+
+        // default has a female specific Pleasured.noStruggle.Orgasm.say
+        // for male and innocent levels there are overrides.
+        //
+        // Secondly, three statements for three injury levels, for both sexes. The more
+        // progressive can be overwritten by tickle.toml
+
+        Toml defaults = new Toml().read(def);
+
+        Toml femaleTickleLessInnocent = new Toml(defaults).read(lif);
+        femaleTickleLessInnocent = new Toml(femaleTickleLessInnocent).read(ti);
+
+        // lessInnocentFemale start + default end ('.  ')
+        String no_inju = "With one last cry of defeat, [mainName] gives in to the urge to orgasm, her intimate folds squeezing down as if lamenting their emptiness.  ";
+
+        String no_inhu_test = femaleTickleLessInnocent.getString("Pleasured.noStruggle.Orgasm.say") +
+            femaleTickleLessInnocent.getString("Pleasured.noStruggle.inju.lt3.say");
+        assertTrue(String.format("'%s'\n!=\n'%s'", no_inju, no_inhu_test), no_inju.equals(no_inhu_test));
+
+        // lessInnocentFemale start + tickle_inju_eq3 end ('.  Already exhausted[...]')
+        String inju_eq3_tickle = "With one last cry of defeat, [mainName] gives in to the urge to orgasm, her intimate folds squeezing down as if lamenting their emptiness.  Already exhausted and gasping for breath, [heShe] can't afford to waste the energy to fight it.  ";
+
+        String inju_eq3_tickle_test = femaleTickleLessInnocent.getString("Pleasured.noStruggle.Orgasm.say") + 
+             femaleTickleLessInnocent.getString("Pleasured.noStruggle.inju.eq3.say");
+
+        assertTrue(String.format("'%s'\n!=\n'%s'", inju_eq3_tickle, inju_eq3_tickle_test), inju_eq3_tickle.equals(inju_eq3_tickle_test));
+    }
 }

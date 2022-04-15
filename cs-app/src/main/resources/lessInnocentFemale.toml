@@ -1,0 +1,8 @@
+[Pleasured.noStruggle.Orgasm]
+  # overrides female statement
+  say = """\
+  With one last cry of defeat, [mainName] gives in to the urge to orgasm, her intimate folds squeezing down \
+  as if lamenting their emptiness\
+  """
+
+

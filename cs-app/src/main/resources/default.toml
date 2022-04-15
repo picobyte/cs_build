@@ -1,0 +1,15 @@
+[Pleasured.noStruggle]
+  [Pleasured.noStruggle.Orgasm]
+    # for Male there is an override, as well as for lower innocence
+    say = """
+    [mainName] cries out in surprise as Her pussy abruptly squeezes down, desperate to be filled.  \
+    She's still caught off-guard by how good it feels to cum\
+    """
+  [Pleasured.noStruggle.inju.lt3]
+    say = ".  "
+  [Pleasured.noStruggle.inju.eq3]
+    say = """.  [HisHer] spasms jostle [hisHer] injuries painfully, but that only enhances the masochistic \
+    pleasure [heShe]'s taking from this.  """
+
+  [Pleasured.noStruggle.inju.gt3]
+    say = ".  [HeShe]'s too badly hurt to do anything but twitch and moan.  "
