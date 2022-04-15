@@ -17,19 +17,18 @@
       "I wouldn't mind... continuing to dream..."
     ]
   [Drained]
-    HighConfidenceMorality = [
+    # No, Low 
+    ConfidenceMorality = [
+      "I don't care about anyone else, just let me die...",
+      "I'm so tired... of fighting...",
+      "I'm sorry, everyone... but I can't fight anymore...",
+
+      "I hate giving them what they want, but if it lets me die...",
+      "I'm... done...",
+      "Even though I know that this energy will be used to hurt people... I can't help it...",
+
       "Fine, take my soul... I hope you choke on it...",
       "I was never strong after all...",
       "To think I was such a selfish person after all..."
-    ]
-    LowConfidenceMorality = [
-      "I hate giving them what they want, but if it lets me die...",
-      "I'm... done...",
-      "Even though I know that this energy will be used to hurt people... I can't help it..."
-    ]
-    NoConfidenceMorality = [
-      "I don't care about anyone else, just let me die...",
-      "I'm so tired... of fighting...",
-      "I'm sorry, everyone... but I can't fight anymore..."
     ]
 
