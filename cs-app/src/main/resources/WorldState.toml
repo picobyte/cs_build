@@ -1,11 +1,11 @@
 [printCapturedLine]
-  [Impregnation]
+  [printCapturedLine.Impregnation]
     NoMoralityInnocence = [
       "I... I must not let anyone know what's happened to me...",
       "If they find out, they'll all turn against me...",
       "It feels like... there's something really bad inside me..."
     ]
-  [Hypnotized]
+  [printCapturedLine.Hypnotized]
     LowInnocenceDignity = [
       "Cum, cum, cum...!",
        "Huh...  Why am I... touching myself...?  Well, whatever...",
@@ -16,7 +16,7 @@
       "Instead of thinking... let us just feel good...",
       "I wouldn't mind... continuing to dream..."
     ]
-  [Drained]
+  [printCapturedLine.Drained]
     # No, Low 
     ConfidenceMorality = [
       "I don't care about anyone else, just let me die...",

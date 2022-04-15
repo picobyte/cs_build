@@ -31,4 +31,21 @@ public class AppTest
         String test2 = toml.getString(base + "DignityModest[3]");
         assertTrue(String.format("'%s'\n!=\n'%s'", test, test2), test.equals(test2));
     }
+    @Test
+    public void WorldStateTomlTest()
+    {
+        InputStream is = AppTest.class.getResourceAsStream("/WorldState.toml");
+        assertTrue("WorldState.toml not found?", is != null);
+        Toml toml = new Toml().read(is);
+
+        String base = "printCapturedLine.";
+        for (String k: new String[]{"Impregnation.NoMoralityInnocence[2]", "Hypnotized.LowInnocenceDignity[2]", "Hypnotized.NoInnocenceDignity[2]",
+                "Drained.ConfidenceMorality[8]"}) {
+            assertTrue(base + k, toml.getString(base + k) != null);
+        }
+        // this may change..
+        String test = "To think I was such a selfish person after all...";
+        String test2 = toml.getString(base + "Drained.ConfidenceMorality[8]");
+        assertTrue(String.format("'%s'\n!=\n'%s'", test, test2), test.equals(test2));
+    }
 }
