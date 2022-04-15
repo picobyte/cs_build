@@ -6,61 +6,61 @@
 [DoubleBroadcast]
   # branch condition wherein these occur. Condition converted to index in ChosenDuoParams, since a DoubleBroadcast
   # applies to two Chosen.
-  [MoreConfidentUndefiled]
+  [DoubleBroadcast.MoreConfident.Undefiled]
     DignityModest = [
       # Order is for Dignity from lowest to highest, first not modest..
-      '''For the first time, [mainName]'s carelessness about [hisHer] clothes has led [himHer] to get stripped and \
-      surrounded by Thralls equipped to film [hisHer] humiliation.  ''',
-      '''The proud [mainName] has been reduced to hunching over and covering [himHer]self with [hisHer] hands as the \
-      Thralls surrounding [himHer] pull out their phones to record [himHer].  ''',
-      '''Despite [hisHer] best efforts, [mainName] has been stripped practically naked.  [HisHer] face remains \
-      expressionless, but [hisHer] heart sinks as [heShe] sees several of the Thralls filming [hisHer] embarrassment.  ''',
+      """For the first time, [mainName]'s carelessness about [hisHer] clothes has led [himHer] to get stripped and \
+      surrounded by Thralls equipped to film [hisHer] humiliation.  """,
+      """The proud [mainName] has been reduced to hunching over and covering [himHer]self with [hisHer] hands as the \
+      Thralls surrounding [himHer] pull out their phones to record [himHer].  """,
+      """Despite [hisHer] best efforts, [mainName] has been stripped practically naked.  [HisHer] face remains \
+      expressionless, but [hisHer] heart sinks as [heShe] sees several of the Thralls filming [hisHer] embarrassment.  """,
 
       # ..then modest, again dignity from lowest to highest,
-      '''[mainName] continues struggling to free [himHer]self, paying no heed to the Thralls who are filming [hisHer] \
-      continued failure.  ''',
-      '''[mainName] fights to escape the Thralls, faltering slightly when [heShe] sees that several of them have \
-      started to film [hisHer] exposed body's movements.  The embarrassment makes it hard for [himHer] to focus.  ''',
-      '''When the Thralls surrounding [mainName] start to pull out their phones and record [himHer], [heShe] turns \
-      [hisHer] face away, struggling with [hisHer] sense of humiliation.  '''
+      """[mainName] continues struggling to free [himHer]self, paying no heed to the Thralls who are filming [hisHer] \
+      continued failure.  """,
+      """[mainName] fights to escape the Thralls, faltering slightly when [heShe] sees that several of them have \
+      started to film [hisHer] exposed body's movements.  The embarrassment makes it hard for [himHer] to focus.  """,
+      """When the Thralls surrounding [mainName] start to pull out their phones and record [himHer], [heShe] turns \
+      [hisHer] face away, struggling with [hisHer] sense of humiliation.  """
     ]
     MoralityStruggle = [
       # Morality from lowest to highest, no struggle, meaning getHATELevel() < 3 || vVirg
-      '''[HeShe] clenches [hisHer] teeth and glares into the lens as they spread [hisHer] [hole] wide open.''',
-      '''Pinned and outnumbered, there's nothing [heShe] can do to stop the Thralls from spreading [hisHer] [hole] and \
-      looking all the way inside.  ''',
-      '''[HeShe] closes [hisHer] eyes and takes a deep breath as the Thrall behind [himHer] lifts [hisHer] legs up and \
-      spreads [hisHer] [hole] so everyone can see inside.  ''',
+      """[HeShe] clenches [hisHer] teeth and glares into the lens as they spread [hisHer] [hole] wide open.""",
+      """Pinned and outnumbered, there's nothing [heShe] can do to stop the Thralls from spreading [hisHer] [hole] and \
+      looking all the way inside.  """,
+      """[HeShe] closes [hisHer] eyes and takes a deep breath as the Thrall behind [himHer] lifts [hisHer] legs up and \
+      spreads [hisHer] [hole] so everyone can see inside.  """,
       # Morality from lowest to highest, with struggle
-      '''[HeShe] grunts in discomfort as one of the Thralls starts to push into [hisHer] [hole], the cameras capturing \
-      [hisHer] expression of helpless rage.  ''',
-      '''Pinned and outnumbered, there's nothing [heShe] can do to stop the Thralls from holding [himHer] down and \
-      capturing a closeup of [hisHer] [hole] while one of them pushes his cock inside it.  ''',
-      '''[HeShe] closes [hisHer] eyes and takes a shuddering breath as the Thrall behind [himHer] thrusts into [hisHer] \
-      anus, trying to ignore the sense of violation of being raped on camera.  '''
+      """[HeShe] grunts in discomfort as one of the Thralls starts to push into [hisHer] [hole], the cameras capturing \
+      [hisHer] expression of helpless rage.  """,
+      """Pinned and outnumbered, there's nothing [heShe] can do to stop the Thralls from holding [himHer] down and \
+      capturing a closeup of [hisHer] [hole] while one of them pushes his cock inside it.  """,
+      """[HeShe] closes [hisHer] eyes and takes a shuddering breath as the Thrall behind [himHer] thrusts into [hisHer] \
+      anus, trying to ignore the sense of violation of being raped on camera.  """
     ]
     Friendly = [
       # first message if not friendly, then if friendly.
-      '''The Thralls are clearly enjoying themselves, but their true purpose becomes clear when the crowd parts and the \
-      captured [mainName] is revealed.\n\n''',
-      '''Then, as if this weren't bad enough, [mainName] spots [c:mainName] being dragged through the crowd toward \
-      [himHer].\n\n'''
+      """The Thralls are clearly enjoying themselves, but their true purpose becomes clear when the crowd parts and the \
+      captured [mainName] is revealed.\n\n""",
+      """Then, as if this weren't bad enough, [mainName] spots [c:mainName] being dragged through the crowd toward \
+      [himHer].\n\n"""
     ]
     OtherMoralityFriendly = [
         # Other chosen morality and whether friendly determine order
-        '''They tell [c:mainName] that unless [c:heShe] cooperates, they'll make things even harder on [mainName].  \
-        [c:mainName] agrees to do what they say, though [c:hisHer] eyes burn with resentful anger.  ''',
-        '''When the Thralls tell [c:mainName] that they'll hurt [mainName] unless [c:heShe] cooperates, [c:heShe] \
-        hurriedly assures them that [c:heShe]'ll do whatever they want.  ''',
-        '''[c:mainName] pleads with the Thralls to go easy on [mainName], and they're happy to agree - provided that \
-        [c:mainName] cooperates.  ''',
+        """They tell [c:mainName] that unless [c:heShe] cooperates, they'll make things even harder on [mainName].  \
+        [c:mainName] agrees to do what they say, though [c:hisHer] eyes burn with resentful anger.  """,
+        """When the Thralls tell [c:mainName] that they'll hurt [mainName] unless [c:heShe] cooperates, [c:heShe] \
+        hurriedly assures them that [c:heShe]'ll do whatever they want.  """,
+        """[c:mainName] pleads with the Thralls to go easy on [mainName], and they're happy to agree - provided that \
+        [c:mainName] cooperates.  """,
         # Same, not friendly
-        '''The Thralls tell [c:mainName] to service them, threatening to punish [mainName] if [c:heShe] does a poor \
-        job.  [c:mainName] says [c:heShe]'ll cooperate, but in truth, [c:heShe] has no intention of trying very hard.  ''',
-        '''When the Thralls threaten to punish [mainName] unless [c:mainName] cooperates, [mainName] doesn't resist, \
-        although it's clear that [c:hisHer] heart isn't in it.  ''',
-        '''The Thralls tell [c:mainName] that [c:heShe]'d better do as they say, or else [mainName] will be punished.  \
+        """The Thralls tell [c:mainName] to service them, threatening to punish [mainName] if [c:heShe] does a poor \
+        job.  [c:mainName] says [c:heShe]'ll cooperate, but in truth, [c:heShe] has no intention of trying very hard.  """,
+        """When the Thralls threaten to punish [mainName] unless [c:mainName] cooperates, [mainName] doesn't resist, \
+        although it's clear that [c:hisHer] heart isn't in it.  """,
+        """The Thralls tell [c:mainName] that [c:heShe]'d better do as they say, or else [mainName] will be punished.  \
         [c:mainName] agrees to cooperate, less out of personal caring for [mainName] and more out of a general sense of \
-        moral obligation.  '''
+        moral obligation.  """
     ]
 
