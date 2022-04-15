@@ -13,6 +13,24 @@ import java.util.List;
 public class AppTest 
 {
     @Test
+    public void ProjectTomlTest()
+    {
+        InputStream is = AppTest.class.getResourceAsStream("/Project.toml");
+        assertTrue("Project.toml not found?", is != null);
+        Toml toml = new Toml().read(is);
+
+        for (String k: new String[]{"IntroOne.Header", "IntroOne.Tutorial", "IntroOne.Copyright",
+                "CampaignMenu.CustomChosen", "CampaignMenu.EasyMode",
+                "ImportMenu.NoRosters", "ImportMenu.GotRosters"}) {
+            assertTrue(k, toml.getString(k) != null);
+        }
+        // this may change..
+        String test = "\n\n[separator]\n\nFound the following importable rosters in directory.  Which would you like to import?";
+        String test2 = toml.getString("ImportMenu.GotRosters");
+        assertTrue(String.format("'%s'\n!=\n'%s'", test, test2), test.equals(test2));
+    }
+
+    @Test
     public void ChosenTomlTest()
     {
         InputStream is = AppTest.class.getResourceAsStream("/Chosen.toml");
@@ -31,6 +49,7 @@ public class AppTest
         String test2 = toml.getString(base + "DignityModest[3]");
         assertTrue(String.format("'%s'\n!=\n'%s'", test, test2), test.equals(test2));
     }
+
     @Test
     public void WorldStateTomlTest()
     {
@@ -39,8 +58,8 @@ public class AppTest
         Toml toml = new Toml().read(is);
 
         String base = "printCapturedLine.";
-        for (String k: new String[]{"Impregnation.NoMoralityInnocence[2]", "Hypnotized.LowInnocenceDignity[2]", "Hypnotized.NoInnocenceDignity[2]",
-                "Drained.ConfidenceMorality[8]"}) {
+        for (String k: new String[]{"Impregnation.NoMoralityInnocence[2]", "Hypnotized.LowInnocenceDignity[2]",
+                "Hypnotized.NoInnocenceDignity[2]", "Drained.ConfidenceMorality[8]"}) {
             assertTrue(base + k, toml.getString(base + k) != null);
         }
         // this may change..
@@ -48,4 +67,5 @@ public class AppTest
         String test2 = toml.getString(base + "Drained.ConfidenceMorality[8]");
         assertTrue(String.format("'%s'\n!=\n'%s'", test, test2), test.equals(test2));
     }
+
 }

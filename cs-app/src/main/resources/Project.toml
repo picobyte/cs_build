@@ -61,7 +61,7 @@ increases in the difficulty of later loops.\
 \n\n[separator]\n
 No importable rosters found in directory.\
 """
-  GotRosters = """\n\n
+  GotRosters = """
 \n\n[separator]\n
 Found the following importable rosters in directory.  Which would you like to import?\
 """
