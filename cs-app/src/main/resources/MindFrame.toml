@@ -1,0 +1,30 @@
+[default]
+    organ = "penis"
+    hole = "pussy"
+    hisHer = "her"
+    HisHer = "Her"
+    himHer = "her"
+    HimHer = "Her"
+    hisHers = "hers"
+    HisHers = "Hers"
+    heShe = "she"
+    HeShe = "She"
+
+[female]
+    organ = "clit"
+    gender = "female"
+
+[male]
+    hisHer = "his"
+    HisHer = "His"
+    himHer = "him"
+    HimHer = "Him"
+    hisHers = "his"
+    HisHers = "His"
+    heShe = "he"
+    HeShe = "He"
+    hole = "anus";
+    gender = "male"
+
+[futanari]
+    gender = "futanari"

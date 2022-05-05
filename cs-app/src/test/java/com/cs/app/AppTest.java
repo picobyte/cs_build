@@ -111,4 +111,36 @@ public class AppTest
 
         assertTrue(String.format("'%s'\n!=\n'%s'", inju_eq3_tickle, inju_eq3_tickle_test), inju_eq3_tickle.equals(inju_eq3_tickle_test));
     }
+    @Test
+    public void SubsetOverriding()
+    {
+        InputStream mindframes = AppTest.class.getResourceAsStream("/MindFrame.toml");
+        assertTrue("MindFrame.toml not found?", mindframes != null);
+        Toml mf = new Toml().read(mindframes);
+
+        Toml fem = new Toml(mf.getTable("Default")).read(mf.getTable("Female"));
+        Toml male = new Toml(mf.getTable("Default")).read(mf.getTable("Male"));
+        Toml futa = new Toml(mf.getTable("Default"));
+
+        String hole = fem.getString("hole");
+        assertTrue(String.format("'%s'\n!=\n'%s'", hole, "pussy"), hole.equals("pussy"));
+
+        String organ = fem.getString("organ");
+        assertTrue(String.format("'%s'\n!=\n'%s'", organ, "clit"), organ.equals("clit"));
+
+
+        hole = male.getString("hole");
+        assertTrue(String.format("'%s'\n!=\n'%s'", hole, "anus"), hole.equals("anus"));
+
+        organ = male.getString("organ");
+        assertTrue(String.format("'%s'\n!=\n'%s'", organ, "penis"), organ.equals("penis"));
+
+
+        hole = futa.getString("hole");
+        assertTrue(String.format("'%s'\n!=\n'%s'", hole, "pussy"), hole.equals("pussy"));
+
+        organ = futa.getString("organ");
+        assertTrue(String.format("'%s'\n!=\n'%s'", organ, "penis"), organ.equals("penis"));
+    }
+
 }
